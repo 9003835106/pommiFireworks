@@ -1,0 +1,96 @@
+<!-- app.component.html (or any Angular template file) -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+  <div class="container-fluid">
+    <a class="navbar-brand rainbow-text fw-bold" href="#" style="font-size: 290%; font-variant: inherit;">POMMI FIREWORKS</a>
+    <br><p class="rainbow-text"><b><i>COLOUR OUR DREAM</i></b></p>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">  
+
+        <li class="nav-item">
+          <a class="nav-link" href="/list"><b>PRODUCTS OF POMMI</b></a>
+                    
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about-us"><b>ABOUT US</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href = "/contact-us"><b>CONTACT US</b></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-2 mb-2" *ngFor="let card of cards">
+      <div class="card card-3d h-100">
+        <img [src]="card.image" class="card-img-top" alt="Card image" width="220px" height="220px">
+        <div class="card-body">
+          <h5 class="card-title titleh"><a href ="/list" class="btn btn-primary">{{ card.title }}</a></h5>
+          <p class="card-text title">{{ card.text }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row" >
+  <div class="col-md-3">
+<app-chakkar-effect>
+
+</app-chakkar-effect>
+  </div>
+  <div class="col-md-3">
+    <app-color2></app-color2>
+    
+  </div>
+  <div class="col-md-3">
+    <app-color3></app-color3>
+  </div>
+  <div class="col-md-3">
+    <app-color4></app-color4>
+  </div>
+
+<br>
+<button type="button" class="btn btn-danger w-100 btn-lg">CLICK THE DARK SCREEN FOR FIRING </button>
+<br><br>
+<app-chakkar></app-chakkar>
+<br><br>
+
+<button type="button" class="btn btn-danger w-100 btn-lg" style="color: rgb(255, 255, 255);">CLICK THE DARK SCREEN FOR FIRING</button>
+
+
+<br><br>
+</div>
+<footer class="bg-danger text-white text-center text-lg-start mt-5">
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4">
+        <h5 class="text-uppercase"><u>OUR ADDRESS</u></h5>
+        <p>POMMI FIREWORKS, NATTARMANGALAM VILLAGE, AMATHUR, SIVAKASI</p>
+        <ul class="list-unstyled">
+          <li><h3>POMMI - GOOGLE MAP LOCATION</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7868.223090191152!2d77.84303689779541!3d9.585652659384897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06d3c07055e993%3A0x26342b590dbaee53!2sVinayakar%20temple!5e0!3m2!1sen!2sin!4v1751956213903!5m2!1sen!2sin" width="1350" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+          
+          </li>
+                
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <hr style="border-width: 9px;"><hr style="border-width: 9px;">
+  <h1 style="color: rgb(255, 255, 255); font-family: 'Times New Roman', Times, serif;">POMMI FIREWORKS,
+      NATTAR MANGALAM VILLAGE,AMATHUR , SIVAKASI
+ <u>WHATSAPP NUMBER :</u> C.SELVAKUMAR [M.E] ,<b> +91 94880 01969</b>,  <b>+91 78679 33520</b>
+ </h1><br><br>
+ <br>
+</footer>
+
+  

@@ -1,0 +1,43 @@
+.th{
+    background-color: aqua;
+    font-size: xx-large;
+    text-align: center;
+    border-color: rgb(255, 0, 0);
+    border-width: 5px;
+    
+}
+.td{
+    background-color: pink;
+    font-size: xx-large;
+    box-shadow: red;
+    text-align: center;
+    border-color: blue;
+    border-width: 15px;
+
+}
+.rainbow-text{
+    
+    
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(to right,red,blue,orange,yellow,rgb(25, 255, 25),violet,lightgreen,rgb(171, 53, 255),skyblue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow-animation 2s linear infinite;
+    background-size: 400% 100%;
+
+
+}
+@keyframes rainbow-animation{
+    0%{background-position: 0% 50%;}
+    50%{background-position: 75%;}
+    100%{background-position: 100% 50%;}
+
+}
+.tbody{
+    background-color:violet;
+    font-family: 'Times New Roman', Times, serif;
+    width: 10px;
+    height: 45px;
+    
+
+}

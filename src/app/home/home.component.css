@@ -1,0 +1,44 @@
+.rainbow-text{
+    
+    
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(to right,red,blue,orange,yellow,rgb(25, 255, 25),violet,lightgreen,rgb(171, 53, 255),skyblue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow-animation 2s linear infinite;
+    background-size: 400% 100%;
+
+
+}
+@keyframes rainbow-animation{
+    0%{background-position: 0% 50%;}
+    50%{background-position: 75%;}
+    100%{background-position: 100% 50%;}
+
+}
+
+.card-3d{
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    box-shadow: 0 8px 20px rgb(249, 7, 7);
+    
+    width: 202px;
+    
+      }
+
+.card-3d:hover{
+    transform: rotateY(5 deg) scale(1.03);
+    box-shadow: 0 22px 30px rgb(15, 255, 2);
+}
+.title{
+    color: red;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.titleh{
+    color: red;
+    text-shadow: 16px;
+    font-weight: 643;
+}

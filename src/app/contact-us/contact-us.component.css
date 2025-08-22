@@ -1,0 +1,18 @@
+.rainbow-text{
+    font-size: xx-large;
+    font-weight: 1400;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(to right,red,blue,orange,yellow,green,violet,lightgreen,indigo,skyblue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow-animation 5s linear infinite;
+    background-size: 400% 100%;
+
+
+}
+@keyframes rainbow-animation{
+    0%{background-position: 0% 50%;}
+    50%{background-position: 75%;}
+    100%{background-position: 100% 50%;}
+
+}
